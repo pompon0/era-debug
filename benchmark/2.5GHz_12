@@ -1,0 +1,49 @@
+gprusak@gprusak-ubuntu:~/github/era-debug/benchmark$ cargo run --release -- --threads=12 --seconds=20
+   Compiling cpu_benchmark v0.1.0 (/home/gprusak/github/era-debug/benchmark)
+    Finished release [optimized] target(s) in 0.54s
+     Running `/home/gprusak/github/era-debug/target/release/benchmark --threads=12 --seconds=20`
+units = 2640
+units/s = 132
+units/thread = 220.00
+units/thread/s = 11.00
+cycles = 798417144600
+cycles/s = 39920857230
+cycles/thread = 66534762050
+cycles/thread/s = 3326738102.5
+cycles/unit = 302430736.59090906
+gprusak@gprusak-ubuntu:~/github/era-debug/benchmark$ cargo run --release -- --threads=24 --seconds=20
+    Finished release [optimized] target(s) in 0.20s
+     Running `/home/gprusak/github/era-debug/target/release/benchmark --threads=24 --seconds=20`
+units = 2551
+units/s = 127.55
+units/thread = 106.29
+units/thread/s = 5.31
+cycles = 769257890700
+cycles/s = 38462894535
+cycles/thread = 32052412112.5
+cycles/thread/s = 1602620605.625
+cycles/unit = 301551505.5664445
+gprusak@gprusak-ubuntu:~/github/era-debug/benchmark$ cargo run --release -- --threads=6 --seconds=20
+    Finished release [optimized] target(s) in 0.20s
+     Running `/home/gprusak/github/era-debug/target/release/benchmark --threads=6 --seconds=20`
+units = 1438
+units/s = 71.9
+units/thread = 239.67
+units/thread/s = 11.98
+cycles = 697764061200
+cycles/s = 34888203060
+cycles/thread = 116294010200
+cycles/thread/s = 5814700510
+cycles/unit = 485232309.59666204
+gprusak@gprusak-ubuntu:~/github/era-debug/benchmark$ cargo run --release -- --threads=1 --seconds=20
+    Finished release [optimized] target(s) in 0.20s
+     Running `/home/gprusak/github/era-debug/target/release/benchmark --threads=1 --seconds=20`
+units = 189
+units/s = 9.45
+units/thread = 189.00
+units/thread/s = 9.45
+cycles = 570137119100
+cycles/s = 28506855955
+cycles/thread = 570137119100
+cycles/thread/s = 28506855955
+cycles/unit = 3016598513.7566137

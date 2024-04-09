@@ -1,6 +1,7 @@
 [workspace]
 members = [ 
     "debug",
+    "benchmark",
 ]
 resolver = "2"
 
@@ -13,6 +14,7 @@ license = "MIT"
 [workspace.dependencies]
 # Crates from this repo.
 zksync_debug = { path = "debug" }
+cpu_benchmark = { path = "benchmark" }
 
 # era-consensus
 zksync_consensus_bft = { version = "0.1.0", git = "https://github.com/matter-labs/era-consensus.git", rev = "d17c018b94f8d186e7fe701e947af8ef1953fa3b" }
