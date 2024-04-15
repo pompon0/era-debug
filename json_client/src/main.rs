@@ -3,18 +3,15 @@ use anyhow::Context as _;
 use clap::Parser;
 use std::fs;
 use std::path::PathBuf;
-use zksync_protobuf::serde::Serde;
-use zksync_consensus_storage::ReplicaState;
 use zksync_dal::{ConnectionPool, Core};
 use zksync_core::consensus;
-use zksync_concurrency::ctx;
 use zksync_web3_decl::{client::L2Client};
 use zksync_core::sync_layer::MainNodeClient;
-use zksync_types::Miniblock;
+use zksync_types::MiniblockNumber;
 
 #[derive(Debug, Parser)]
 struct Cli {
-    #[arg(long)]
+    #[arg(long, default_value = "https://old.stage.era.zksync.dev")]
     server_url: String,
     #[arg(long)]
     miniblock: u32,

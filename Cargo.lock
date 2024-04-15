@@ -7593,6 +7593,8 @@ dependencies = [
  "tokio",
  "zksync_core",
  "zksync_dal",
+ "zksync_types",
+ "zksync_web3_decl",
 ]
 
 [[package]]

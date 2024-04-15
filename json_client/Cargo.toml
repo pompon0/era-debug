@@ -10,6 +10,8 @@ default-run = "main"
 [dependencies]
 zksync_dal.workspace = true
 zksync_core.workspace = true
+zksync_types.workspace = true
+zksync_web3_decl.workspace = true
 
 sqlx.workspace = true
 anyhow.workspace = true
