@@ -7582,6 +7582,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "zksync_consensus_json_client"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "clap",
+ "serde",
+ "serde_json",
+ "sqlx",
+ "tokio",
+ "zksync_core",
+ "zksync_dal",
+]
+
+[[package]]
 name = "zksync_consensus_network"
 version = "0.1.0"
 source = "git+https://github.com/matter-labs/era-consensus.git?rev=d17c018b94f8d186e7fe701e947af8ef1953fa3b#d17c018b94f8d186e7fe701e947af8ef1953fa3b"

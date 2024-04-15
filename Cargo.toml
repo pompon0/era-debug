@@ -2,6 +2,7 @@
 members = [ 
     "debug",
     "benchmark",
+    "json_client",
 ]
 resolver = "2"
 
